@@ -16,3 +16,7 @@ This project is a Hybrid Intrusion Detection System that combines:
 
 3. Start dashboard  
    streamlit run app_streamlit.py
+
+# hybrid-intrusion-detection-system
+Hybrid Intrusion Detection System using ML + Rule Engine + Dashboard
+
