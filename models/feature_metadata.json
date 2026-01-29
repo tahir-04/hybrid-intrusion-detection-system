@@ -1,0 +1,38 @@
+{
+  "feature_columns": [
+    "bytes_in",
+    "bytes_out",
+    "total_bytes",
+    "packets_in",
+    "packets_out",
+    "total_packets",
+    "avg_packet_size",
+    "outbound_inbound_ratio",
+    "packet_rate",
+    "byte_rate",
+    "unique_destination_ips",
+    "destination_port_count",
+    "window_packets_out",
+    "window_bytes_out",
+    "avg_duration",
+    "is_common_dst_port",
+    "is_privileged_src_port",
+    "connection_count",
+    "duration",
+    "protocol_ICMP",
+    "protocol_TCP",
+    "protocol_UDP"
+  ],
+  "n_features": 22,
+  "label_mapping": {
+    "0": "BENIGN",
+    "1": "Brute_Force",
+    "2": "DDoS",
+    "3": "Port_Scan",
+    "4": "SQL_Injection",
+    "5": "XSS"
+  },
+  "has_labels": true,
+  "created_at": "2026-01-29 05:21:37",
+  "window_size": "1min"
+}

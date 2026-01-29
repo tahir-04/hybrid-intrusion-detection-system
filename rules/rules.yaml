@@ -1,0 +1,24 @@
+- id: PORT_SCAN
+  description: High number of destination ports accessed
+  condition: destination_port_count > 100
+  severity: critical
+
+- id: DATA_EXFILTRATION
+  description: Large outbound data compared to inbound
+  condition: outbound_inbound_ratio > 5
+  severity: critical
+
+- id: HIGH_OUTBOUND_TRAFFIC
+  description: Unusually high outbound traffic volume
+  condition: bytes_out > 1000000
+  severity: high
+
+- id: MANY_CONNECTIONS
+  description: High number of connections in window
+  condition: connection_count > 50
+  severity: medium
+
+- id: HIGH_PACKET_RATE
+  description: Abnormally high packet rate
+  condition: packet_rate > 1000
+  severity: medium
